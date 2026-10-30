@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emoji Search Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <h1>Emoji Search Project 😀</h1>
+      <p>Search and explore emojis easily by name, alias, or tag.</p>
+    </header>
+
+    <section class="controls">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search emojis..."
+          autocomplete="off"
+        />
+        <button id="clearBtn" class="clear-btn" type="button">Clear</button>
+      </div>
+    </section>
+
+    <section class="results-header">
+      <h2 id="resultsTitle">All Emojis</h2>
+      <p id="resultsSubtitle">Loading emoji collection...</p>
+    </section>
+
+    <section id="emojiGrid" class="emoji-grid"></section>
+
+    <div id="emptyState" class="empty-state hidden">
+      <div class="empty-emoji">😕</div>
+      <h3>No emojis found</h3>
+      <p>Try another search term.</p>
+    </div>
+  </main>
+
+  <div id="toast" class="toast">Copied emoji</div>
+
+  <script src="https://akhil-06.github.io/emoji_project/emojiList.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
